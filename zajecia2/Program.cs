@@ -10,6 +10,9 @@ namespace zajecia2
     {
         static void Main(string[] args)
         {
+            /* Mój pierwszy program napisany w języku C# */
+            Console.WriteLine("Witaj Świecie");
+            Console.ReadKey();
         }
     }
 }
