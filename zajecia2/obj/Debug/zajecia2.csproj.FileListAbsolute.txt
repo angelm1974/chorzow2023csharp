@@ -1,0 +1,8 @@
+D:\Programy\csharp\chorzow2023csharp\zajecia2\bin\Debug\zajecia2.exe.config
+D:\Programy\csharp\chorzow2023csharp\zajecia2\bin\Debug\zajecia2.exe
+D:\Programy\csharp\chorzow2023csharp\zajecia2\bin\Debug\zajecia2.pdb
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.SuggestedBindingRedirects.cache
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.exe
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.pdb
