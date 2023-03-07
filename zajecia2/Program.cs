@@ -12,6 +12,7 @@ namespace zajecia2
         {
             /* Mój pierwszy program napisany w języku C# */
             Console.WriteLine("Witaj Świecie");
+            Console.WriteLine("CX#ABC");
             Console.ReadKey();
         }
     }
