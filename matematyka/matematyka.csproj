@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{354CB06B-C25F-4B10-A782-26198B395191}</ProjectGuid>
+    <ProjectGuid>{F4C83352-A84F-4ED5-BF6C-59099EED23AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>zajecia2</RootNamespace>
-    <AssemblyName>zajecia2</AssemblyName>
+    <RootNamespace>matematyka</RootNamespace>
+    <AssemblyName>matematyka</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,7 +22,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,16 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="instrukcjeWarunkowe.cs" />
-    <Compile Include="jawnaKonwersja.cs" />
-    <Compile Include="literaly.cs" />
-    <Compile Include="nieJawnaKonwersja.cs" />
-    <Compile Include="operatory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="stale.cs" />
-    <Compile Include="typString.cs" />
-    <Compile Include="wskazniki.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

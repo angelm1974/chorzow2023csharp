@@ -1,0 +1,8 @@
+D:\Programy\csharp\chorzow2023csharp\matematyka\bin\Debug\matematyka.exe.config
+D:\Programy\csharp\chorzow2023csharp\matematyka\bin\Debug\matematyka.exe
+D:\Programy\csharp\chorzow2023csharp\matematyka\bin\Debug\matematyka.pdb
+D:\Programy\csharp\chorzow2023csharp\matematyka\obj\Debug\matematyka.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\matematyka\obj\Debug\matematyka.csproj.SuggestedBindingRedirects.cache
+D:\Programy\csharp\chorzow2023csharp\matematyka\obj\Debug\matematyka.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\matematyka\obj\Debug\matematyka.exe
+D:\Programy\csharp\chorzow2023csharp\matematyka\obj\Debug\matematyka.pdb

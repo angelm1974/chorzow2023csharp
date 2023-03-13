@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,12 +34,47 @@ namespace zajecia2
             //Console.WriteLine(ob);
             //int liczba2 = (int)ob;
 
-            dynamic liczba = 23;
+            //typString mojElement = new typString();
+            //mojElement.Sciezka = "c:\\noads";
+            //mojElement.Sciezka = @"c:\windows\system";
+            //trzymaj();
+            //Console.WriteLine("Podaj nazwe użytkownika:");
+            //mojElement.Uzytkownik= Environment.UserName;
 
-            liczba =  Convert.ToString(liczba) + "abc";
-            Console.WriteLine(liczba);
+            //Console.WriteLine(String.Format("Ścieżka do windowsa to: {0}, a użytkownik to: {1}",mojElement.Sciezka,mojElement.Uzytkownik));
+            //Przykład typu dynamicznego
+            //dynamic liczba = 23;
+
+            //liczba =  Convert.ToString(liczba) + "abc";
+            //Console.WriteLine(liczba);
+
+            //TYPY WSKAŹNIKOWE
+            //wskazniki ws = new wskazniki();
+            //ws.trzymaj();
+
+            //KONEWRSJA
+            //nieJawnaKonwersja nk =new nieJawnaKonwersja();
+            ////nk.Konwertuj();
+            //Console.WriteLine("ala\vola");
+            //jawnaKonwersja jk = new jawnaKonwersja();
+            ////jk.Konwertuj();
+            //operatory op=new operatory();
+            //op.Operator();
+
+            instrukcjeWarunkowe iw=new instrukcjeWarunkowe();
+            Console.WriteLine("Podaj imię \n");
+            iw.WykonajSwitch(Console.ReadLine());
+
             Console.ReadLine();
+
+            ////Inicjacja zmiennych
+            //float oko = 45, ucho=33;
+
+            ////definicja zmiennych
+            //double u, l, j;
         }
+
+        
     }
 
     class Rectangle
@@ -57,6 +93,15 @@ namespace zajecia2
         public uint mojUInt { get; set; } //32 bity 0 do 4294967295
         public ulong mojULong { get; set; } //64 bitowy liczb dodatnich 0 do 8446744073709551615
         public ushort mojUShort { get; set; } //0 do 65535
+
+        //TYPY ZMIENNYCH
+        //Integral - sbyte, byte, short,ushort,int,uint,ulong,char
+        //Zmiennoprzecinkowe - float,double
+        //Dziesiętne - decimal
+        //Logiczne - true, false
+        //Puste - Nullable
+
+
         public Rectangle()
         {
             Console.WriteLine("Podaj pierwszy bok: ");
