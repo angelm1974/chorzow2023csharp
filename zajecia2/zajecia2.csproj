@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="genericDict.cs" />
     <Compile Include="Generyki.cs" />
     <Compile Include="instrukcjeWarunkowe.cs" />
     <Compile Include="jawnaKonwersja.cs" />

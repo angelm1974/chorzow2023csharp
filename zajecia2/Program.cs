@@ -71,7 +71,7 @@ namespace zajecia2
             //p.szachyPlansza();
 
             //Hermetyzacja hermetyzacja = new Hermetyzacja();
-             
+
             //foreach(string s in args)
             //{
             //    switch(s)
@@ -107,9 +107,13 @@ namespace zajecia2
 
             //mojaTablica.tworzenie_tablic();
 
-            Generyki mojgen=new Generyki();
+            //Generyki mojgen=new Generyki();
             //mojgen.tworzGeneryki();
-            mojgen.zbudujBiblioteke();
+            // mojgen.zbudujBiblioteke();
+            //WarsztatSamochodowy ws=new WarsztatSamochodowy();
+            // ws.zbudujSTO();
+            genericDict sl = new genericDict();
+            sl.wyszukiwanie();
             Console.ReadLine();
 
             ////Inicjacja zmiennych
