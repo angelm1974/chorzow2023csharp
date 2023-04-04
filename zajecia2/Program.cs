@@ -108,8 +108,8 @@ namespace zajecia2
             //mojaTablica.tworzenie_tablic();
 
             Generyki mojgen=new Generyki();
-            mojgen.tworzGeneryki();
-
+            //mojgen.tworzGeneryki();
+            mojgen.zbudujBiblioteke();
             Console.ReadLine();
 
             ////Inicjacja zmiennych

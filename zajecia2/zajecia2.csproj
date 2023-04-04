@@ -59,6 +59,7 @@
     <Compile Include="tablice.cs" />
     <Compile Include="typString.cs" />
     <Compile Include="typy_puste.cs" />
+    <Compile Include="WarsztatSamochodowy.cs" />
     <Compile Include="wskazniki.cs" />
   </ItemGroup>
   <ItemGroup>
