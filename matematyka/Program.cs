@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace matematyka
 {
     internal class Program
@@ -54,13 +55,16 @@ namespace matematyka
                         break;
                 }
                 
-                Console.WriteLine("Czy kontynuować?(t/n");
+                Console.WriteLine("Czy kontynuować?(t/n)");
                 var odp= Console.ReadLine();
                 if (odp != "t")
                 {
                     Environment.Exit(0);
                 }
+
                 
+
+
             }
         }
     }

@@ -1,0 +1,8 @@
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\bin\Debug\pierwszaAplikacja.exe.config
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\bin\Debug\pierwszaAplikacja.exe
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\bin\Debug\pierwszaAplikacja.pdb
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\obj\Debug\pierwszaAplikacja.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\obj\Debug\pierwszaAplikacja.csproj.SuggestedBindingRedirects.cache
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\obj\Debug\pierwszaAplikacja.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\obj\Debug\pierwszaAplikacja.exe
+D:\Programy\csharp\chorzow2023csharp\pierwszaAplikacja\obj\Debug\pierwszaAplikacja.pdb

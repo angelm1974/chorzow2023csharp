@@ -6,3 +6,6 @@ D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.Suggeste
 D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.CoreCompileInputs.cache
 D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.exe
 D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.pdb
+D:\Programy\csharp\chorzow2023csharp\zajecia2\bin\Debug\Biblioteka.dll
+D:\Programy\csharp\chorzow2023csharp\zajecia2\bin\Debug\Biblioteka.pdb
+D:\Programy\csharp\chorzow2023csharp\zajecia2\obj\Debug\zajecia2.csproj.CopyComplete

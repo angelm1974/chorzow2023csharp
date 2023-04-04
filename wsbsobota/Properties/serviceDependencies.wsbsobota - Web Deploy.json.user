@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": false,
+      "restoreTime": "2023-03-18T13:37:45.135015Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "366d18f1-4a85-4c8a-ad79-1e1569368c6f"
+    },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "westeurope"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "366d18f1-4a85-4c8a-ad79-1e1569368c6f"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "WSB_CHORZOW"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2PW4GCfR3Emo7DDn14qn0wAAAAACAAAAAAAQZgAAAAEAACAAAADSFJCfCMvs08YUTt/g+TaMHmeI+f5S9yGQUMMDkOc44gAAAAAOgAAAAAIAACAAAAB8YU+S2hODcYywOb76jpU/nnuJIaNk5I7kdNDovsSk8oAAAADkqz3PNtncfPrdUojxUZb641VWAZJtPdjkuD6p1u52oqbjWLtT3GnopQ7n3hOijHYV9Ua7LVW86i1Eh4EKmR+bxbMTBhth211Q7S7+t47fz0ZOgCE0YEecUVAUWDuwSOWzndhI4PvSTNuk4RnecAG+OsSHsmfg7WOw1SB7ohINEUAAAADcDVUSvbu0kxYZvPIH4sgfgAK3hG35oMyn1q+KMhBoq89NVEtFAkJii3IJroD18mjNhAQxigYk2ZSuwl9eqVvm</EncryptedPassword>
+    <History>True|2023-03-18T13:44:37.3302623Z;False|2023-03-18T14:43:02.4554040+01:00;True|2023-03-18T13:52:16.6474094+01:00;True|2023-03-18T13:48:23.7293399+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:wsb.database.windows.net,1433%3bInitial Catalog=wsbsobota%3bPersist Security Info=False%3bUser ID=mariusz%3bPassword=Nana%401974%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

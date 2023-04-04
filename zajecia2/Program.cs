@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace zajecia2
 {
     internal class Program
@@ -62,8 +63,52 @@ namespace zajecia2
             //op.Operator();
 
             instrukcjeWarunkowe iw=new instrukcjeWarunkowe();
-            Console.WriteLine("Podaj imię \n");
-            iw.WykonajSwitch(Console.ReadLine());
+            //Console.WriteLine("Podaj imię \n");
+            //iw.WykonajSwitch(Console.ReadLine());
+
+            //Petle p=new Petle();
+            ////p.petlaWhile();
+            //p.szachyPlansza();
+
+            //Hermetyzacja hermetyzacja = new Hermetyzacja();
+             
+            //foreach(string s in args)
+            //{
+            //    switch(s)
+            //    {
+            //        case "Jan":
+            //            {
+            //                Console.WriteLine("Sformatuję dysk!");
+            //                break;
+            //            }
+            //        case "Adam":
+            //            {
+            //                Console.WriteLine("Witam!");
+            //                break;
+            //            }
+            //        default:
+            //            Console.WriteLine("Dziwne imię!");
+            //            break;
+            //    }
+            //}
+
+
+            //MojeMetody mojeMetody=new MojeMetody();
+            //string cokolwiek= mojeMetody.ZnajdzMaksimum(16, 11);
+            //Console.WriteLine(cokolwiek);
+
+            //int? a=mojeMetody.ObliczSilnie(4);
+            //Console.WriteLine(a);
+            //typy_puste typy_Puste = new typy_puste();
+            //typy_puste.puste();
+            //typy_Puste.porownanie_pustych();
+
+            //tablice mojaTablica=new tablice();
+
+            //mojaTablica.tworzenie_tablic();
+
+            Generyki mojgen=new Generyki();
+            mojgen.tworzGeneryki();
 
             Console.ReadLine();
 

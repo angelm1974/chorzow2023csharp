@@ -1,0 +1,6 @@
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\bin\Debug\Biblioteka.dll
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\bin\Debug\Biblioteka.pdb
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\obj\Debug\Biblioteka.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\obj\Debug\Biblioteka.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\obj\Debug\Biblioteka.dll
+D:\Programy\csharp\chorzow2023csharp\Biblioteka\obj\Debug\Biblioteka.pdb
