@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="ksiazkaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.ksiazka)">
+        <MappingFragment StoreEntitySet="ksiazkaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tytul" ColumnName="tytul" />
+          <ScalarProperty Name="autor" ColumnName="autor" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="rok_wydania" ColumnName="rok_wydania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stronaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.strona)">
+        <MappingFragment StoreEntitySet="stronaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="numer" ColumnName="numer" />
+          <ScalarProperty Name="il_obrazow" ColumnName="il_obrazow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ksiazkastrona" TypeName="Model1.ksiazkastrona" StoreEntitySet="stronaSet">
+      <EndProperty Name="ksiazka">
+        <ScalarProperty Name="Id" ColumnName="ksiazka_Id" />
+      </EndProperty>
+      <EndProperty Name="strona">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

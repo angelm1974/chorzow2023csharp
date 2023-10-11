@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="ksiazkaSet" EntityType="Model1.Store.ksiazkaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="stronaSet" EntityType="Model1.Store.stronaSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ksiazkastrona" Association="Model1.Store.ksiazkastrona">
+      <End Role="ksiazka" EntitySet="ksiazkaSet" />
+      <End Role="strona" EntitySet="stronaSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ksiazkaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tytul" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="rok_wydania" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stronaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numer" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="il_obrazow" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ksiazka_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ksiazkastrona">
+    <End Role="ksiazka" Type="Model1.Store.ksiazkaSet" Multiplicity="1" />
+    <End Role="strona" Type="Model1.Store.stronaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ksiazka">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="strona">
+        <PropertyRef Name="ksiazka_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ksiazkaSet" EntityType="Model1.ksiazka" />
+          <EntitySet Name="stronaSet" EntityType="Model1.strona" />
+          <AssociationSet Name="ksiazkastrona" Association="Model1.ksiazkastrona">
+            <End Role="ksiazka" EntitySet="ksiazkaSet" />
+            <End Role="strona" EntitySet="stronaSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ksiazka">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tytul" Type="String" Nullable="false" />
+          <Property Name="autor" Type="String" Nullable="false" />
+          <Property Name="isbn" Type="String" Nullable="false" />
+          <Property Name="rok_wydania" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="strona" Relationship="Model1.ksiazkastrona" FromRole="ksiazka" ToRole="strona" />
+        </EntityType>
+        <EntityType Name="strona">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numer" Type="String" Nullable="false" />
+          <Property Name="il_obrazow" Type="String" Nullable="false" />
+          <NavigationProperty Name="ksiazka" Relationship="Model1.ksiazkastrona" FromRole="strona" ToRole="ksiazka" />
+        </EntityType>
+        <Association Name="ksiazkastrona">
+          <End Type="Model1.ksiazka" Role="ksiazka" Multiplicity="1" />
+          <End Type="Model1.strona" Role="strona" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="ksiazkaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.ksiazka)">
+        <MappingFragment StoreEntitySet="ksiazkaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tytul" ColumnName="tytul" />
+          <ScalarProperty Name="autor" ColumnName="autor" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="rok_wydania" ColumnName="rok_wydania" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stronaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.strona)">
+        <MappingFragment StoreEntitySet="stronaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="numer" ColumnName="numer" />
+          <ScalarProperty Name="il_obrazow" ColumnName="il_obrazow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ksiazkastrona" TypeName="Model1.ksiazkastrona" StoreEntitySet="stronaSet">
+      <EndProperty Name="ksiazka">
+        <ScalarProperty Name="Id" ColumnName="ksiazka_Id" />
+      </EndProperty>
+      <EndProperty Name="strona">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

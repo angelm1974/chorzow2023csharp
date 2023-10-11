@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="ksiazkaSet" EntityType="Model1.Store.ksiazkaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="stronaSet" EntityType="Model1.Store.stronaSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ksiazkastrona" Association="Model1.Store.ksiazkastrona">
+      <End Role="ksiazka" EntitySet="ksiazkaSet" />
+      <End Role="strona" EntitySet="stronaSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ksiazkaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tytul" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="rok_wydania" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="stronaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numer" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="il_obrazow" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ksiazka_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ksiazkastrona">
+    <End Role="ksiazka" Type="Model1.Store.ksiazkaSet" Multiplicity="1" />
+    <End Role="strona" Type="Model1.Store.stronaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ksiazka">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="strona">
+        <PropertyRef Name="ksiazka_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

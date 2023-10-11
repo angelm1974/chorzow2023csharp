@@ -1,0 +1,16 @@
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\MojaAplikacjaSobota.exe.config
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\MojaAplikacjaSobota.exe
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\MojaAplikacjaSobota.pdb
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\Microsoft.CSharp.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.Data.DataSetExtensions.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.Data.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.Net.Http.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.Xml.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Release\System.Xml.Linq.dll
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.csproj.SuggestedBindingRedirects.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.csproj.CopyComplete
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.exe
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Release\MojaAplikacjaSobota.pdb

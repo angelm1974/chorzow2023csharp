@@ -1,0 +1,8 @@
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Debug\MojaAplikacjaSobota.exe.config
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Debug\MojaAplikacjaSobota.exe
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\bin\Debug\MojaAplikacjaSobota.pdb
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Debug\MojaAplikacjaSobota.csproj.AssemblyReference.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Debug\MojaAplikacjaSobota.csproj.SuggestedBindingRedirects.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Debug\MojaAplikacjaSobota.csproj.CoreCompileInputs.cache
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Debug\MojaAplikacjaSobota.exe
+D:\Programy\csharp\chorzow2023csharp\MojaAplikacjaSobota\obj\Debug\MojaAplikacjaSobota.pdb

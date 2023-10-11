@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ksiazkaSet" EntityType="Model1.ksiazka" />
+    <EntitySet Name="stronaSet" EntityType="Model1.strona" />
+    <AssociationSet Name="ksiazkastrona" Association="Model1.ksiazkastrona">
+      <End Role="ksiazka" EntitySet="ksiazkaSet" />
+      <End Role="strona" EntitySet="stronaSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ksiazka">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tytul" Type="String" Nullable="false" />
+    <Property Name="autor" Type="String" Nullable="false" />
+    <Property Name="isbn" Type="String" Nullable="false" />
+    <Property Name="rok_wydania" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="strona" Relationship="Model1.ksiazkastrona" FromRole="ksiazka" ToRole="strona" />
+  </EntityType>
+  <EntityType Name="strona">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numer" Type="String" Nullable="false" />
+    <Property Name="il_obrazow" Type="String" Nullable="false" />
+    <NavigationProperty Name="ksiazka" Relationship="Model1.ksiazkastrona" FromRole="strona" ToRole="ksiazka" />
+  </EntityType>
+  <Association Name="ksiazkastrona">
+    <End Type="Model1.ksiazka" Role="ksiazka" Multiplicity="1" />
+    <End Type="Model1.strona" Role="strona" Multiplicity="*" />
+  </Association>
+</Schema>
